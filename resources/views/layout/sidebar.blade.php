@@ -4,7 +4,7 @@
             <a href="{{ route('beranda') }}">Perpus</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="{{ route('beranda') }}">PK</a>
+            <a href="{{ route('beranda') }}">PS</a>
           </div>
           <ul class="sidebar-menu">
             <li class="{{ request()->routeIs('dashboard') ? 'active' : '' }}"><a class="nav-link" href="{{ route('dashboard') }}"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>

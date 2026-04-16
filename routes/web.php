@@ -3,11 +3,11 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('pages.beranda.index');
+    return view('pages.user.beranda.index');
 })->name('beranda');
 
 Route::get('/buku', function () {
-    return view('pages.buku.index');
+    return view('pages.user.buku.index');
 })->name('buku');
 
 Route::get('/login', function () {
@@ -15,19 +15,19 @@ Route::get('/login', function () {
 })->name('login');
 
 Route::get('/dashboard', function () {
-    return view('pages.dashboard.index');
+    return view('pages.admin.dashboard.index');
 })->name('dashboard');
 
 Route::get('/anggota', function () {
-    return view('pages.anggota.index');
+    return view('pages.admin.anggota.index');
 })->name('anggota');
 
 Route::get('/peminjaman', function () {
-    return view('pages.peminjaman.index');
+    return view('pages.user.peminjaman.index');
 })->name('peminjaman');
 
 Route::get('/petugas', function () {
-    return view('pages.petugas.index');
+    return view('pages.admin.petugas.index');
 })->name('petugas');
 
 ?>
