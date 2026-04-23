@@ -7,18 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 class buku extends Model
 {
     protected $table = 'buku';
-    protected $primaryKey = 'id_buku';
     protected $fillable = [
-        'id_buku',
-        'judul',
-        'pengarang',
-        'penerbit',
-        'tahun_terbit',
-        'stok',
+        'Buku_id',
+        'Judul',
+        'Pengarang',
+        'Penerbit',
+        'Tahun_terbit',
+        'Stok',
     ];
 
     public function peminjaman()
     {
-        return $this->hasMany(peminjaman::class, 'id_buku');
+        return $this->hasMany(detail_pinjam::class, 'Buku_id');
     }
 }

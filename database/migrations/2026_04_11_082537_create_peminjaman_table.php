@@ -13,7 +13,10 @@ return new class extends Migration
     {
         Schema::create('peminjaman', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->foreignId('buku_id')->constrained('buku', 'buku_id');
+            $table->foreignId('petugas_id')->constrained('petugas', 'petugas_id');
+            $table->date('tanggal_peminjaman');
+            $table->date('tanggal_kembali')->nullable();
         });
     }
 

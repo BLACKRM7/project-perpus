@@ -6,22 +6,20 @@ use Illuminate\Database\Eloquent\Model;
 
 class detail_pinjam extends Model
 {
-    protected $table = 'detail_pinjam';
-    protected $primaryKey = 'id_detail';
+    protected $table = 'detail_pinjams';
     protected $fillable = [
-        'id_detail',
-        'id_pinjam',
-        'id_buku',
-        'status_buku',
+        'Pinjam_id',
+        'Buku_id',
+        'Status_buku',
     ];
 
     public function peminjaman()
     {
-        return $this->belongsTo(peminjaman::class, 'id_pinjam');
+        return $this->belongsTo(peminjaman::class, 'Pinjam_id');
     }
 
     public function buku()
     {
-        return $this->belongsTo(buku::class, 'id_buku');
+        return $this->belongsTo(buku::class, 'Buku_id');
     }
 }
