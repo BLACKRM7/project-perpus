@@ -10,7 +10,7 @@
             <div class="search-backdrop"></div>
           </div>
         </form>
-        <ul class="navbar-nav navbar-right">
+        <ul class="navbar-nav navbar-right">  
          
           
           <li"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg nav-link-user">

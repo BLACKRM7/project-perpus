@@ -45,10 +45,10 @@
               <div class="card-body">
                 <form method="POST" action="#" class="needs-validation" novalidate="">
                   <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
+                    <label>Username</label>
+                    <input class="form-control" name="username" tabindex="1" required autofocus>
                     <div class="invalid-feedback">
-                      Please fill in your email
+                      Please fill in your username
                     </div>
                   </div>
 
@@ -79,7 +79,7 @@
               Don't have an account? <a href="auth-register.html">Create One</a>
             </div>
             <div class="simple-footer">
-              Copyright &copy; Stisla 2018
+              Copyright &copy; Stisla 2026
             </div>
           </div>
         </div>
